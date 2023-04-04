@@ -12,5 +12,19 @@ spring:
       hibernate:
         format_sql: true
 
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 2000
+#        one-indexed-parameters: true
+
 logging.level:
     org.hibernate.SQL: debug
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /document
+    try-it-out-enabled: false
+    validator-url: localhost
