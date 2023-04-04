@@ -1,5 +1,6 @@
 package study.datajpa.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -19,6 +20,7 @@ public class MemberController {
 
     private final MemberRepository memberRepository;
 
+    @Operation(summary = "aaa", description = "aaaaa")
     @GetMapping("/member/{id}")
     public String findMember(@PathVariable("id") Long id) {
         Member member = memberRepository.findById(id).get();

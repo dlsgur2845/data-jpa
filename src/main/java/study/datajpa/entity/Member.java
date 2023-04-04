@@ -1,8 +1,10 @@
 package study.datajpa.entity;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.*;
 
+@Schema(hidden = true)
 @Entity
 @Getter @Setter
 // JPA 에서 기본 생성자는 있어야함, hibernate가 jpa를 쓰기위해 프록시를 사용

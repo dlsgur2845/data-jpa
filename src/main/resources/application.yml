@@ -23,8 +23,12 @@ logging.level:
     org.hibernate.SQL: debug
 
 springdoc:
+  api-docs:
+    path: /docs
+
   swagger-ui:
     enabled: true
-    path: /document
-    try-it-out-enabled: false
-    validator-url: localhost
+    path: /swagger-ui
+    display-request-duration: true
+#    try-it-out-enabled: false
+#    validator-url: localhost
